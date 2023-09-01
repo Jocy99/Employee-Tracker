@@ -3,7 +3,7 @@ VALUES ("Management"),
 ("HR"),
 ("Engineering");
 
-INSERT INTO roll (title, salary, department_id)
+INSERT INTO role (title, salary, department_id)
 VALUES ("software developer", 100000, 3),
     ("team manager", 80000, 1),
     ("receptionist", 65000, 2),
@@ -11,7 +11,7 @@ VALUES ("software developer", 100000, 3),
     ("administrative assistant", 80000, 2),
     ("data entry clerk", 80000, 3);
 
-INSERT INTO employee(first_name, last_name, roll_id)
+INSERT INTO employee(first_name, last_name, role_id)
 VALUES ("Kevin", "Tortolini", 1),
     ("Joe", "Shmoe", 3),
     ("Cameron", "Verner", 4),

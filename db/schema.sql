@@ -11,7 +11,7 @@ CREATE TABLE department (
     name VARCHAR (30) NOT NULL
 );
 
-CREATE TABLE roll (
+CREATE TABLE role (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR (30) NOT NULL,
     salary DECIMAL (10,2) NOT NULL,
@@ -24,7 +24,7 @@ CREATE TABLE employee (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
-    roll_id INT NOT NULL,
-    foreign key(roll_id) references roll(id)
+    role_id INT NOT NULL,
+    foreign key(role_id) references role(id)
 );
 
